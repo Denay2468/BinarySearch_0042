@@ -89,3 +89,7 @@ void binarySearch() {
     } while (repeat == 'y' || repeat == 'Y');
 }
 
+int main() {
+    input();
+}
+
