@@ -94,5 +94,6 @@ int main() {
     bubbleSort();
     display();
     binarySearch();
+    return 0;
 }
 
