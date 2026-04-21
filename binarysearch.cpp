@@ -6,14 +6,25 @@ int nLenght;
 int x;
 
 void input() {
-    cout << "Enter the number of elements: ";
-    cin >> nLenght;
-    if (nLenght <= 10) 
-    {
-       break;
+    while (true) {  
+        cout << "Enter the number of elements: ";
+        cin >> nLenght;
+        if (nLenght <= 10) 
+        {
+            break;
+        }
+        else {
+            cout << "Please enter a number less than or equal to 10." << endl;
+        }
     }
-    else {
-        cout << "Please enter a number less than or equal to 10." << endl;
+
+
+    cout << "\n==========================\n";
+    cout << "Enter the elements in sorted order: \n";
+    cout << "==========================\n";
+    for (int i = 0; i < nLenght; i++) {
+        cout << "Element " << i + 1 << ": ";
+        cin >> element[i];
     }
 }
 
