@@ -40,3 +40,16 @@ void bubbleSort() {
     } while (pass < nLenght);
 }
 
+void display() {
+    cout << "\n==========================\n";
+    cout << "Sorted elements: \n";
+    cout << "==========================\n";
+    for (int i = 0; i < nLenght; i++) {
+        cout << element[i] << " ";
+        if (i < nLenght - 1) {
+            cout << "-> ";
+        }
+    }
+    cout << endl;
+}
+
