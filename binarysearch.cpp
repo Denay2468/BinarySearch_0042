@@ -28,3 +28,15 @@ void input() {
     }
 }
 
+void bubbleSort() {
+    int pass = 1;
+    do {
+        for (int i = 0; i < nLenght - pass; i++) {
+            if (element[i] > element[i + 1]) {
+                swap(element[i], element[i + 1]);
+            }
+        }
+        pass++;
+    } while (pass < nLenght);
+}
+
