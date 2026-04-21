@@ -53,3 +53,39 @@ void display() {
     cout << endl;
 }
 
+void binarySearch() {
+    char repeat;
+    do {
+        cout << "\n===========================\n";
+        cout << "Binary Search\n";
+        cout << "===========================\n";    
+        cout << "Enter the element to search: ";
+        cin >> x;
+
+        int low = 0;
+        int high = nLenght - 1;
+
+        do {
+            int mid = (low + high) / 2;
+
+            if (element[mid] == x) {
+                cout << "Element found at index: " << mid << endl;
+                return;
+            }
+            if (x < element[mid]) {
+                high = mid - 1;
+            }
+            else {
+                low = mid + 1;
+            }
+        } while (low <= high);
+
+        if (low > high) {
+            cout << "Element not found in the array." << endl;
+        }
+
+        cout << "Do you want to search for another element? (y/n): ";
+        cin >> repeat;
+    } while (repeat == 'y' || repeat == 'Y');
+}
+
